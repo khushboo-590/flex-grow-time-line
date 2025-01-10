@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.bg-blue {
+    background-color: #2F1893;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button {
+    border-radius: 100px;
+    background-color: #482BE7;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 7px 12px 7px 12px;
+    border: none;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.content {
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 150px 0px 0px 0px;
+    align-items: center;
+}
+
+input[type="email"] {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: center;
+    color: #8274BE;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 2px solid #8274BE;
+    padding: 16px 24px;
+
+}
+
+.send {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #25DAC5;
+    border-radius: 30px;
+    padding: 16px 33px;
+    border: none;
+    margin-left: 10px;
+}
+
+.paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: gray;
+    padding: 20px 0px 20px 0px;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+@media(max-width:767.98px) {
+
+    .menu-list {
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        transition: all 200ms linear;
+    }
+
+    .menu-list ul {
+        flex-direction: column;
+
+    }
+
+
+    input:checked~.menu-list {
+        right: 0;
+        z-index: 1;
+    }
+
+    label[for="menu-icon"] {
+        width: 40px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+
+    label[for="menu-icon"] span {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        border-radius: 3px;
+        transition: all 200ms linear;
+
+    }
+
+    input:checked~.menu-list {
+        left: 0;
+        z-index: 1;
+    }
+
+    input:checked~label[for="menu-icon"] span:first-child {
+        transform: rotate(30deg);
+        transform-origin: left;
+    }
+
+    input:checked~label[for="menu-icon"] span:last-child {
+        transform: rotate(-30deg);
+        transform-origin: left;
+    }
+
+    input:checked~label[for="menu-icon"] span:nth-child(2) {
+        transform: rotate(-40px);
+
+        visibility: hidden;
+    }
+}
+ 
+@media(max-width:420px) {
+    .send {
+      
+        margin-top: 10px;
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
